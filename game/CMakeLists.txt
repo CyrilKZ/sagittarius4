@@ -9,9 +9,9 @@ find_package(EnTT CONFIG REQUIRED)
 
 # 将源代码添加到此项目的可执行文件。
 
-add_executable (server "src/server.h" "src/server.cpp" "src/world/world.h" "src/world/world.cpp" "src/world/physics.cpp" "src/world/pyhsics.h")
+add_executable (server "src/server.h" "src/server.cpp" "src/world/world.h" "src/world/world.cpp" "src/world/physics.cpp" "src/world/physics.h")
 target_link_libraries(server PRIVATE EnTT::EnTT)
 
-add_executable (client "src/client.cpp" "src/client.h" "src/world/world.h" "src/world/world.cpp" "src/world/physics.cpp" "src/world/pyhsics.h")
+add_executable (client "src/client.cpp" "src/client.h" "src/world/world.h" "src/world/world.cpp" "src/world/physics.cpp" "src/world/physics.h")
 target_link_libraries(client PRIVATE EnTT::EnTT)
 # TODO: 如有需要，请添加测试并安装目标。

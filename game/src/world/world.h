@@ -1,5 +1,6 @@
 #pragma once
 #include <entt/entt.hpp>
+#include "physics.h"
 
 class GameWorld
 {
@@ -9,7 +10,11 @@ class GameWorld
 	Tick tick_ = 0;
 
 public:
+	void init();
+
 	void update();
+
+	void physcis_system_update();
 
 	void take_snapshot();
 

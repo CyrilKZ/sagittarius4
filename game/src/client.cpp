@@ -2,5 +2,11 @@
 
 int main()
 {
-	std::cout << "HELLO CLIENT" << std::endl;
+	GameWorld world;
+	world.init();
+	for (auto i = 0; i < 10; ++i)
+	{
+		world.update();
+	}
+	return 0;
 }
