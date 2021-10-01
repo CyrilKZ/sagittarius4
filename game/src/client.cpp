@@ -2,11 +2,11 @@
 
 int main()
 {
-	GameWorld world;
-	world.init();
-	for (auto i = 0; i < 10; ++i)
-	{
-		world.update();
-	}
-	return 0;
+    GameWorld world;
+    world.init();
+    for (auto i = 0; i < 10; ++i)
+    {
+        world.update();
+    }
+    return 0;
 }

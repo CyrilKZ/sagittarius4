@@ -1,7 +1,6 @@
 #pragma once
 #include <type_traits>
 
-
 template <typename T> struct Vec2
 {
     T x;
@@ -76,8 +75,3 @@ template <typename T> struct Vec2
     }
 };
 
-
-using V2f32 = Vec2<float_t>;
-using V2f64 = Vec2<double_t>;
-using V2i32 = Vec2<int32_t>;
-using V2i64 = Vec2<int64_t>;

@@ -1,22 +1,20 @@
 #pragma once
 #include <entt/entt.hpp>
-#include "physics.h"
+#include "components/physics.h"
 
 class GameWorld
 {
-	using Tick = uint64_t;
-
-	entt::registry registry_;
-	Tick tick_ = 0;
+    entt::registry registry_;
+    Tick tick_ = 0;
 
 public:
-	void init();
+    void init();
 
-	void update();
+    void update();
 
-	void physcis_system_update();
+    void physcis_system_update();
 
-	void take_snapshot();
+    void take_snapshot();
 
-	void from_snapshot();
+    void from_snapshot();
 };
